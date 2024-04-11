@@ -6,8 +6,8 @@ import seaborn as sns
 def plot_correlacao_nivel_experiencia_por_trabalho_remoto(df:pd.DataFrame):
 
     st.subheader("16 - Existe alguma diferença salarial significativa entre funcionários remotos e não-remotos para o mesmo título de trabalho?")
-    st.write("Para essa análise, estamos levando em consideração o valor da mádia")
-    st.selectbox("Selecione um médida de cálculo:", options=['Média', 'Moda', 'Mediana', 'Máx', 'Min', 'Q1', 'Q2', 'Q3', 'IQR', 'Desvio Padrão'])
+    # st.write("Para essa análise, estamos levando em consideração o valor da mádia")
+    # st.selectbox("Selecione um médida de cálculo:", options=['Média', 'Moda', 'Mediana', 'Máx', 'Min', 'Q1', 'Q2', 'Q3', 'IQR', 'Desvio Padrão'])
     df_filtered = df.loc[(df['Remote ratio'].isin([0,100])), ['Job title', 'Salary usd', 'Experience level', 'Remote ratio']]
 
     pivot = df_filtered.pivot_table(
