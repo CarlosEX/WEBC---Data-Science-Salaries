@@ -28,15 +28,12 @@ from respostas import resposta_13_14
 from respostas import resposta_15
 from respostas import resposta_16
 
-
-
 # Configurações da página
 st.set_page_config(
     page_title="WEBC Analytics",
     initial_sidebar_state='auto',
     layout='wide'
 )
-
 
 # carrega o dataframe
 df = section_dataframe.get_dataframe()
@@ -53,18 +50,18 @@ ano_filtered = section_sidebar.content(df)
 hide_st_style = """
                         <style>
                         header {visibility: hidden}
-                        .block-container {padding:25px}
+                        .block-container {padding:25px} 
                         #MainMenu {visibility:hidden;}
                         footer {visibility:hidden;}
                         </style>
             """
 #st.markdown(hide_st_style, unsafe_allow_html=True)
 
+
 # cria as duas principais guias da página principal
 tab_dash, tab_info, tab_sql = st.tabs(["📈 Dashboard", "🗃 Detalhes do Conjundo de dados", "Análise SQL"])
 
 with tab_dash:
-    
     
     #Header 
     
@@ -72,16 +69,12 @@ with tab_dash:
     
     df_current_year = df[df['Work year'].isin([ano_filtered])] 
     
-    
-    
     # -------------------------
     # PLOT: ROW 1
     
     respostas_card.plot_respostas_card(df_current_year, ano_filtered)
 
-
     st.divider()
-    
 
     # --------------------------------------------------------------------------------------------------
     # PLOT: ROW 2
@@ -92,7 +85,6 @@ with tab_dash:
     with c_row2_2:
         resposta_7.plot_distribuicao_tipos_emprego(df_current_year)
 
-    
     st.divider()  
     
     # --------------------------------------------------------------------------------------------------
