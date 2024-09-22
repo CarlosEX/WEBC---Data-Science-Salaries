@@ -24,6 +24,7 @@ def content(df:pd.DataFrame):
         
         with col1:
             st.write("Oi, eu criei esse painel para meus estudos de Python e Pandas, para analise de dados...")
+            st.write("Quiser conversar (81 98292-7722)")
         with col2:
             pass
             # linkedin_icon(linkedin_url)
