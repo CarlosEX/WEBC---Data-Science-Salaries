@@ -20,13 +20,13 @@ def content(df:pd.DataFrame):
         # st.warning("https://www.kaggle.com/datasets/zain280/data-science-salaries")
         
         st.divider()
-        col1, col2, col3 = st.columns([3,1,1])
+        # col1, col2, col3 = st.columns([3,1,1])
         
-        with col1:
-            st.write("O Senhor é o meu pastor e nada me faltará. Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por longos dias.")
-            st.write("Contato (81 98292-7722)")
-        with col2:
-            linkedin_icon(linkedin_url)
+        # with col1:
+        st.write("O Senhor é o meu pastor e nada me faltará. Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por longos dias.")
+        # st.write("Contato (81 98292-7722)")
+        # with col2:
+        linkedin_icon(linkedin_url)
 
         return ano_filtered
 
