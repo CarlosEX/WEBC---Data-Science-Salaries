@@ -23,7 +23,7 @@ def content(df:pd.DataFrame):
         col1, col2, col3 = st.columns([3,1,1])
         
         with col1:
-            st.write("Oi, eu criei esse painel para meus estudos de Python e Pandas, para analise de dados...")
+            st.write("O Senhor é o meu pastor e nada me faltará. Ainda que eu andasse pelo vale da sombra da morte, não temeria mal algum, porque tu estás comigo; a tua vara e o teu cajado me consolam. Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por longos dias.")
             st.write("Quiser conversar (81 98292-7722)")
         with col2:
             pass
