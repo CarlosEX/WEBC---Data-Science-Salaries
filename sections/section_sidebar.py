@@ -23,7 +23,7 @@ def content(df:pd.DataFrame):
         col1, col2, col3 = st.columns([3,1,1])
         
         with col1:
-            st.write(":)")
+            st.write("Oi, eu criei esse painel para meus estudos de Python e Pandas, para analise de dados...")
         with col2:
             pass
             # linkedin_icon(linkedin_url)
