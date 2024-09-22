@@ -24,6 +24,7 @@ def content(df:pd.DataFrame):
         
         # with col1:
         st.write("O Senhor é o meu pastor e nada me faltará. Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por longos dias.")
+        st.divider()
         # st.write("Contato (81 98292-7722)")
         # with col2:
         linkedin_icon(linkedin_url)
