@@ -17,15 +17,16 @@ def content(df:pd.DataFrame):
             index=2
         )
             
-        st.warning("https://www.kaggle.com/datasets/zain280/data-science-salaries")
+        # st.warning("https://www.kaggle.com/datasets/zain280/data-science-salaries")
         
         st.divider()
         col1, col2, col3 = st.columns([3,1,1])
         
         with col1:
-            st.write("Por: Carlos Antonio")
+            st.write(":)")
         with col2:
-            linkedin_icon(linkedin_url)
+            pass
+            # linkedin_icon(linkedin_url)
 
         return ano_filtered
 
